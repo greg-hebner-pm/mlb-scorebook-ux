@@ -1,0 +1,68 @@
+/* ===========================================================
+   MLB Digital Scorebook — Design Tokens & Shared Styles
+   Tailwind handles layout/utility classes; this file holds
+   the few things Tailwind can't: custom fonts, the diamond
+   glyph, scorecard grid lines, and brand color variables.
+=========================================================== */
+
+:root {
+  --mlb-navy: #041e42;
+  --mlb-red: #bf0d3e;
+  --mlb-yellow: #f5d130;
+  --mlb-ink: #14141a;
+  --mlb-paper: #f6f3ec;       /* scorecard "paper" tone */
+  --mlb-paper-line: #cdbfa3;  /* scorecard grid lines */
+  --mlb-gray-100: #f4f5f7;
+  --mlb-gray-300: #d8dadf;
+  --mlb-gray-600: #5a5f6b;
+}
+
+html, body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--mlb-gray-100);
+}
+
+/* Persistent header sits above everything, including the scrollable scorecard */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background-color: var(--mlb-navy);
+}
+
+/* Active hotlink / toggle state per spec: "yellow active state" */
+.is-active {
+  background-color: var(--mlb-yellow) !important;
+  color: var(--mlb-navy) !important;
+}
+
+/* Scorecard "paper" surface */
+.scorecard-surface {
+  background-color: var(--mlb-paper);
+  background-image:
+    linear-gradient(var(--mlb-paper-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--mlb-paper-line) 1px, transparent 1px);
+}
+
+/* Diamond glyph used inside each at-bat cell (placeholder, refined later) */
+.diamond {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1.5px solid var(--mlb-gray-600);
+  transform: rotate(45deg);
+}
+
+/* Logo placeholders (Tube Socks / Tiggers) until real art is dropped in */
+.logo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 700;
+  color: white;
+}
+
+/* Horizontal scroll affordance for the wide offense/defense grid */
+.scroll-fade-right {
+  background: linear-gradient(to right, transparent, var(--mlb-gray-100) 90%);
+}

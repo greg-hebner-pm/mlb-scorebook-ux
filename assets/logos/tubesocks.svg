@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="49" fill="#1c1c1c" stroke="#c4c4c4" stroke-width="2"/>
+
+  <!-- Tube sock silhouette, angled slightly for a dynamic mark -->
+  <g transform="translate(50 52) rotate(-12) translate(-50 -52)">
+    <path d="
+      M 40 18
+      L 62 18
+      L 64 60
+      Q 64 72 58 78
+      Q 52 84 45 80
+      Q 39 76 39 68
+      L 40 18
+      Z"
+      fill="#f4f5f7" stroke="#9ca3af" stroke-width="1.5"/>
+
+    <!-- cuff -->
+    <rect x="39.5" y="17" width="23" height="9" rx="2" fill="#bf0d3e"/>
+
+    <!-- stripe bands -->
+    <rect x="39" y="30" width="24.5" height="4" fill="#bf0d3e"/>
+    <rect x="39.3" y="38" width="24" height="3" fill="#041e42"/>
+
+    <!-- heel/toe shading -->
+    <path d="M 45 80 Q 52 84 58 78 Q 60 74 60 70 Q 52 76 45 73 Z" fill="#d8dadf"/>
+  </g>
+</svg>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tube Socks @ Tiggers — Live | MLB Digital Scorebook Prototype</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="min-h-screen flex flex-col items-center">
+
+  <!--
+    INTRO / SCOREBOARD SCREEN
+    Static page (per spec) except for the "Scorebook" hotlink in the
+    feature banner below, which routes to pages/scorebook.html.
+  -->
+  <main class="w-full max-w-md bg-white min-h-screen shadow-xl flex flex-col">
+
+    <!-- Top utility bar: MLB logo intentionally removed per spec -->
+    <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+      <a href="#" class="text-sm font-semibold text-[var(--mlb-navy)]">Log In</a>
+      <div class="flex items-center gap-3 text-[var(--mlb-navy)]">
+        <!-- gamepad / menu icon placeholders -->
+        <span class="text-lg">&#9863;</span>
+        <span class="text-lg">&#9776;</span>
+      </div>
+    </div>
+
+    <!-- Field/action hero image area: pitch overlay and outfield banner removed per spec.
+         The 3x3 pitch-location grid is kept (empty) as requested. -->
+    <div class="relative w-full aspect-[3/2] bg-gradient-to-b from-emerald-800 to-emerald-900 overflow-hidden">
+      <img src="assets/field-hero.jpg" alt="" class="w-full h-full object-cover opacity-80"
+           onerror="this.style.display='none'">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="grid grid-cols-3 grid-rows-3 w-40 h-40 border border-white/60">
+          <div class="border border-white/40"></div><div class="border border-white/40"></div><div class="border border-white/40"></div>
+          <div class="border border-white/40"></div><div class="border border-white/40"></div><div class="border border-white/40"></div>
+          <div class="border border-white/40"></div><div class="border border-white/40"></div><div class="border border-white/40"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live game state -->
+    <div class="px-4 pt-4 pb-2">
+      <div class="flex items-center justify-between mb-3">
+        <span class="bg-[var(--mlb-red)] text-white text-xs font-bold px-2 py-1 rounded">LIVE</span>
+        <span class="text-sm text-gray-700 font-medium" id="game-state-label">TOP 4TH &middot; 1 OUT</span>
+      </div>
+
+      <div class="flex items-center justify-between py-2">
+        <div class="flex items-center gap-3">
+          <img src="assets/logos/tubesocks.svg" alt="Tube Socks logo" class="w-9 h-9 rounded-full">
+          <span class="font-bold text-lg text-[var(--mlb-ink)]">Tube Socks</span>
+        </div>
+        <span class="font-bold text-2xl tabular-nums" id="away-score">3</span>
+      </div>
+      <div class="flex items-center justify-between py-2">
+        <div class="flex items-center gap-3">
+          <img src="assets/logos/tiggers.svg" alt="Tiggers logo" class="w-9 h-9 rounded-full">
+          <span class="font-bold text-lg text-[var(--mlb-ink)]">Tiggers</span>
+        </div>
+        <span class="font-bold text-2xl tabular-nums" id="home-score">2</span>
+      </div>
+
+      <p class="text-xs text-gray-500 mt-2" id="broadcast-line">DSN</p>
+      <p class="text-sm text-gray-800 mt-1">
+        <span class="text-[var(--mlb-navy)] font-semibold">P:</span> Delgado &nbsp;
+        <span class="text-[var(--mlb-navy)] font-semibold">AB:</span> Petrov
+      </p>
+    </div>
+
+    <!-- Feature banner: Watch / Audio / Gameday / Story / Scorebook -->
+    <nav class="flex items-center justify-between px-4 py-3 border-y border-gray-200 text-sm font-semibold text-[var(--mlb-navy)]">
+      <a href="#" class="hover:underline">Watch</a>
+      <a href="#" class="hover:underline">Audio</a>
+      <a href="#" class="hover:underline">Gameday</a>
+      <a href="#" class="hover:underline">Story</a>
+      <a href="pages/scorebook.html" class="hover:underline underline decoration-2 decoration-[var(--mlb-yellow)]">Scorebook</a>
+    </nav>
+
+    <!-- Ad placeholder, kept per spec ("Keep this as is") -->
+    <div class="mx-4 my-4 rounded bg-[var(--mlb-navy)] text-white text-xs px-4 py-3 flex items-center justify-between">
+      <span>Extreme Networks connects fans in 19 ballparks across MLB.</span>
+      <span>&rsaquo;</span>
+    </div>
+
+    <!-- Portfolio attribution banner (left: name/title, right: LinkedIn) -->
+    <div class="mt-auto px-4 py-4 border-t border-gray-200 flex items-center justify-between text-xs text-gray-600">
+      <div>
+        <p class="font-semibold text-[var(--mlb-ink)]">Greg Hebner</p>
+        <p>Senior Product Designer — MLB App, Web &amp; Streaming (Candidate Proposal)</p>
+      </div>
+      <a href="https://www.linkedin.com/in/greghebner/" target="_blank" rel="noopener"
+         class="text-[var(--mlb-navy)] font-semibold hover:underline whitespace-nowrap ml-3">
+        LinkedIn &#8599;
+      </a>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
