@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b3d2e"/>
+      <stop offset="100%" stop-color="#15523f"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f6b4d"/>
+      <stop offset="100%" stop-color="#2f8a61"/>
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="0%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky / upper bowl -->
+  <rect x="0" y="0" width="600" height="170" fill="url(#sky)"/>
+
+  <!-- stadium light stanchions -->
+  <g stroke="#0c2340" stroke-width="3">
+    <line x1="40" y1="20" x2="40" y2="60"/>
+    <line x1="560" y1="20" x2="560" y2="60"/>
+  </g>
+  <g fill="#e6e9ee">
+    <rect x="18" y="6" width="44" height="16" rx="2"/>
+    <rect x="538" y="6" width="44" height="16" rx="2"/>
+    <circle cx="26" cy="14" r="2.4"/><circle cx="38" cy="14" r="2.4"/><circle cx="50" cy="14" r="2.4"/>
+    <circle cx="546" cy="14" r="2.4"/><circle cx="558" cy="14" r="2.4"/><circle cx="570" cy="14" r="2.4"/>
+  </g>
+  <rect x="0" y="0" width="600" height="170" fill="url(#spotlight)"/>
+
+  <!-- outfield wall -->
+  <rect x="0" y="150" width="600" height="26" fill="#0c2340"/>
+  <g fill="#1a3a63">
+    <rect x="20" y="156" width="70" height="14" rx="1.5"/>
+    <rect x="120" y="156" width="100" height="14" rx="1.5"/>
+    <rect x="250" y="156" width="100" height="14" rx="1.5"/>
+    <rect x="380" y="156" width="100" height="14" rx="1.5"/>
+    <rect x="500" y="156" width="80" height="14" rx="1.5"/>
+  </g>
+
+  <!-- outfield grass -->
+  <rect x="0" y="176" width="600" height="224" fill="url(#grass)"/>
+  <g stroke="#1c7a55" stroke-width="22" opacity="0.5">
+    <line x1="-20" y1="200" x2="300" y2="200"/>
+    <line x1="320" y1="200" x2="640" y2="200"/>
+    <line x1="-20" y1="244" x2="300" y2="244"/>
+    <line x1="320" y1="244" x2="640" y2="244"/>
+  </g>
+
+  <!-- infield dirt diamond -->
+  <path d="M300 400 L120 260 Q300 130 480 260 Z" fill="#a9714a"/>
+  <path d="M300 400 L120 260 Q300 130 480 260 Z" fill="none" stroke="#8a5a3a" stroke-width="2"/>
+
+  <!-- infield grass diamond -->
+  <path d="M300 372 L186 268 Q300 200 414 268 Z" fill="#2f8a61"/>
+
+  <!-- bases -->
+  <rect x="294" y="356" width="14" height="14" fill="#f4f5f7" stroke="#c8cdd6" stroke-width="1" transform="rotate(45 301 363)"/>
+  <rect x="194" y="262" width="12" height="12" fill="#f4f5f7" stroke="#c8cdd6" stroke-width="1" transform="rotate(45 200 268)"/>
+  <rect x="394" y="262" width="12" height="12" fill="#f4f5f7" stroke="#c8cdd6" stroke-width="1" transform="rotate(45 400 268)"/>
+
+  <!-- batter silhouette at the plate, built from simple clean shapes -->
+  <g transform="translate(300 245)" fill="#0c1118">
+    <ellipse cx="0" cy="118" rx="22" ry="5" fill="#000" opacity="0.22"/>
+
+    <!-- back leg -->
+    <rect x="-14" y="70" width="9" height="42" rx="3" transform="rotate(8 -10 90)"/>
+    <!-- front leg -->
+    <rect x="4" y="70" width="9" height="42" rx="3" transform="rotate(-10 9 90)"/>
+
+    <!-- torso, slightly crouched batting stance -->
+    <path d="M-15 28 Q-17 0 -2 -10 L10 -8 Q18 0 16 28 Q16 58 8 72 L-10 72 Q-16 58 -15 28 Z"/>
+
+    <!-- head + cap brim -->
+    <circle cx="-2" cy="-26" r="11"/>
+    <path d="M-13 -29 Q-2 -34 9 -27 L9 -24 Q-2 -29 -13 -25 Z" fill="#0c1118"/>
+
+    <!-- front arm -->
+    <path d="M10 4 Q22 -2 30 -14" stroke="#0c1118" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- back arm -->
+    <path d="M-4 2 Q6 -6 14 -16" stroke="#0c1118" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+    <!-- bat -->
+    <line x1="30" y1="-14" x2="46" y2="-34" stroke="#0c1118" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- soft vignette so foreground UI text stays legible -->
+  <rect x="0" y="0" width="600" height="400" fill="#000000" opacity="0.08"/>
+</svg>
