@@ -248,7 +248,7 @@
         </div>
         <div class="divide-y divide-gray-100">${rows}</div>
         <p class="text-[10px] text-gray-400 text-center py-3 border-t border-gray-100 mt-2">
-          Substitutions are managed in the Offence/Defense tab.
+          Substitutions are managed in the Offense/Defense tab.
         </p>
         ${FIELD_SVG}`;
       return;
@@ -278,7 +278,7 @@
       <div class="px-4 py-3 border-t border-gray-100">
         <button id="btn-confirm-lineup"
           class="w-full bg-gray-900 text-white text-sm font-bold py-2.5 rounded-xl">Confirm Lineup</button>
-        <p class="text-[10px] text-gray-400 text-center mt-2">Substitutions are managed in the Offence/Defense tab.</p>
+        <p class="text-[10px] text-gray-400 text-center mt-2">Substitutions are managed in the Offense/Defense tab.</p>
       </div>
       ${FIELD_SVG}`;
 
@@ -519,7 +519,7 @@
     const lines   = segs.map(([a,b],i) => i<n
       ? `<line x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}" stroke="${pStroke}" stroke-width="2.5" stroke-linecap="round"/>`
       : '').join('');
-    return `<svg viewBox="0 0 40 40" class="w-6 h-6">${outline}${lines}</svg>`;
+    return `<svg viewBox="0 0 40 40" class="w-7 h-7">${outline}${lines}</svg>`;
   }
 
   function gridCell(team, bo, inning, eventMap, isTF) {
@@ -534,8 +534,8 @@
       const cls     = hasEdit ? classifyResult(label) : { bases:0, scored:false };
       return `
         <div data-cell data-bo="${bo}" data-inning="${inning}"
-             class="w-16 shrink-0 border-b border-l border-gray-200 flex flex-col items-center
-                    justify-center gap-0.5 relative bg-white min-h-[68px] cursor-pointer hover:bg-amber-50 transition-colors">
+             class="w-[74px] shrink-0 border-b border-l border-gray-200 flex flex-col items-center
+                    justify-center gap-0.5 relative bg-white min-h-[76px] cursor-pointer hover:bg-amber-50 transition-colors">
           ${hasEdit ? diamondSVG({...cls, dim:false}) : '<div class="w-5 h-5 border border-gray-200 rotate-45 opacity-30"></div>'}
           ${hasEdit && label ? `<span class="text-[8px] font-bold text-gray-800 max-w-[58px] text-center truncate">${label}</span>` : ''}
           ${edit ? '<span class="absolute top-0.5 right-0.5 w-1.5 h-1.5 rounded-full bg-blue-500"></span>' : ''}
@@ -552,21 +552,21 @@
     const cls        = happened ? classifyResult(label) : { bases:0, scored:false };
 
     if (isDead) {
-      return `<div class="w-16 shrink-0 border-b border-l border-gray-100 bg-gray-50/50 min-h-[68px] cell-dead"></div>`;
+      return `<div class="w-[74px] shrink-0 border-b border-l border-gray-100 bg-gray-50/50 min-h-[76px] cell-dead"></div>`;
     }
     if (isFuture) {
       // Faint outline only — no result peeking through
       return `
-        <div class="w-16 shrink-0 border-b border-l border-gray-200 flex items-center justify-center
-                    bg-white min-h-[68px] cursor-pointer hover:bg-gray-50 transition-colors"
+        <div class="w-[74px] shrink-0 border-b border-l border-gray-200 flex items-center justify-center
+                    bg-white min-h-[76px] cursor-pointer hover:bg-gray-50 transition-colors"
              data-cell data-bo="${bo}" data-inning="${inning}">
           <div class="w-5 h-5 border border-gray-200 rotate-45 opacity-40"></div>
         </div>`;
     }
     return `
       <div data-cell data-bo="${bo}" data-inning="${inning}"
-           class="w-16 shrink-0 border-b border-l border-gray-200 flex flex-col items-center
-                  justify-center gap-0.5 relative bg-white min-h-[68px]
+           class="w-[74px] shrink-0 border-b border-l border-gray-200 flex flex-col items-center
+                  justify-center gap-0.5 relative bg-white min-h-[76px]
                   cursor-pointer hover:bg-amber-50 transition-colors ${isCurrent ? 'cell-current' : ''}">
         ${diamondSVG({...cls, dim:false})}
         ${label ? `<span class="text-[8px] font-bold text-gray-800 max-w-[58px] text-center truncate">${label}</span>` : ''}
@@ -584,13 +584,13 @@
       </span>
       <span class="block text-gray-400 text-[9px] leading-none">${entry.positionAbbr}${!entry.active?' ✕':''}</span>
     `).join('');
-    return `<div class="flex flex-col justify-center px-2 py-1.5 border-b border-gray-100 bg-white min-h-[68px]">${inner}</div>`;
+    return `<div class="flex flex-col justify-center px-2 py-1.5 border-b border-gray-100 bg-white min-h-[76px]">${inner}</div>`;
   }
 
   function buildGrid(team, eventMap, isTF) {
     const lineup = data.lineups[team];
     const hdr = Array.from({length:INNINGS},(_,i)=>
-      `<div class="w-16 shrink-0 h-9 flex items-center justify-center text-[11px] font-bold
+      `<div class="w-[74px] shrink-0 h-9 flex items-center justify-center text-[11px] font-bold
                    text-gray-500 border-b border-l border-gray-200 bg-gray-50">${i+1}</div>`
     ).join('');
     const rows = lineup.map(p=>{
@@ -604,7 +604,7 @@
     const eventMap = buildEventMap(team);
     panel.innerHTML = `
       <div class="px-4 pt-4 pb-2 flex items-center justify-between border-b border-gray-100">
-        <h2 class="font-bold text-gray-900">Offence / Defense</h2>
+        <h2 class="font-bold text-gray-900">Offense / Defense</h2>
         ${extraHeader}
       </div>
       <div class="flex">
@@ -613,7 +613,7 @@
           <div id="player-col">${data.lineups[team].map(p=>playerColCell(team,p.battingOrder)).join('')}</div>
         </div>
         <div class="overflow-x-auto flex-1" id="grid-scroll">
-          <div id="atbat-grid" class="min-w-[704px]">${buildGrid(team,eventMap,isTF)}</div>
+          <div id="atbat-grid" class="min-w-[814px]">${buildGrid(team,eventMap,isTF)}</div>
         </div>
       </div>`;
     wireOffDefClicks(team, eventMap, isTF);
@@ -969,10 +969,60 @@
   }
 
   /* ══════════════════════════════════════════════════════════════════════════
-     LINESCORE
+     LINESCORE — CSS Grid with inline styles only.
+     No Tailwind classes, no table layout, no browser quirks.
+     Column template: TEAM | 1–9 (equal 1fr) | R | H | E
   ══════════════════════════════════════════════════════════════════════════ */
-  const linescoreBody = document.getElementById('linescore-body');
+  const LS_INN  = 9;  // always show 9 inning columns (standard MLB linescore)
+  const LS_GRID = `54px repeat(${LS_INN},1fr) 28px 24px 24px`;
+  const LS_ROW  = `display:grid;grid-template-columns:${LS_GRID};align-items:center;`;
 
+  function renderLinescore() {
+    const container = document.getElementById('linescore-container');
+    if (!container) return;
+    const { inn, tot } = state.mode === 'true-fan' ? computeTFLinescore() : computeWNLLinescore();
+
+    const hdrCell = 'font-size:10px;font-weight:600;color:#9ca3af;text-align:center;padding:5px 0;';
+    const dataCell= 'font-size:10px;font-weight:700;color:#1f2937;text-align:center;padding:5px 0;';
+    const teamCell= 'font-size:10px;font-weight:700;color:#1f2937;text-align:left;padding:5px 0 5px 10px;background:#f9fafb;position:sticky;left:0;z-index:2;';
+    const hdrTeam = 'font-size:10px;font-weight:600;color:#9ca3af;text-align:left;padding:5px 0 5px 10px;background:#f9fafb;position:sticky;left:0;z-index:2;';
+    const totStyle= 'border-left:1px solid #d1d5db;font-size:11px;font-weight:800;color:#111827;text-align:center;padding:5px 0;';
+
+    // Header — exactly LS_INN inning numbers
+    const inningHeaders = Array.from({length:LS_INN},(_,i)=>i+1)
+      .map(n=>`<div style="${hdrCell}">${n}</div>`).join('');
+
+    // Data row — slice inn to exactly LS_INN elements so column count matches the template
+    const teamRow = (side) => {
+      const cells = inn[side].slice(0, LS_INN)
+        .map(r=>`<div style="${dataCell}">${r||''}</div>`).join('');
+      return `
+        <div style="${LS_ROW}border-top:1px solid #e5e7eb;">
+          <div style="${teamCell}">
+            <div style="display:flex;align-items:center;gap:4px;">
+              <img src="${LOGO[side]}" style="width:14px;height:14px;border-radius:50%;" alt="">
+              <span>${ABBR[side]}</span>
+            </div>
+          </div>
+          ${cells}
+          <div style="${totStyle}">${tot[side].R}</div>
+          <div style="${dataCell}">${tot[side].H}</div>
+          <div style="${dataCell}">${tot[side].E}</div>
+        </div>`;
+    };
+
+    container.innerHTML = `
+      <div style="${LS_ROW}">
+        <div style="${hdrTeam}">TEAM</div>
+        ${inningHeaders}
+        <div style="${hdrCell}border-left:1px solid #d1d5db;color:#6b7280;font-weight:700;">R</div>
+        <div style="${hdrCell}color:#6b7280;font-weight:700;">H</div>
+        <div style="${hdrCell}color:#6b7280;font-weight:700;">E</div>
+      </div>
+      ${teamRow('away')}
+      ${teamRow('home')}
+    `;
+  }
   function computeWNLLinescore() {
     const inn = { away:Array(INNINGS).fill(0), home:Array(INNINGS).fill(0) };
     const tot = { away:{R:0,H:0,E:0}, home:{R:0,H:0,E:0} };
@@ -997,27 +1047,6 @@
       if (['1B','2B','3B','HR'].includes(edit.result)) tot[side].H++;
     });
     return { inn, tot };
-  }
-
-  function renderLinescore() {
-    const { inn, tot } = state.mode==='true-fan' ? computeTFLinescore() : computeWNLLinescore();
-    linescoreBody.innerHTML = '';
-    ['away','home'].forEach(side => {
-      const tr = document.createElement('tr');
-      const cells = inn[side].map(r=>`<td class="py-1.5">${r||''}</td>`).join('');
-      tr.innerHTML = `
-        <td class="ls-team-col bg-gray-50 text-left pl-3 py-1.5">
-          <div class="flex items-center gap-1">
-            <img src="${LOGO[side]}" class="w-3.5 h-3.5 rounded-full" alt="">
-            <span>${ABBR[side]}</span>
-          </div>
-        </td>
-        ${cells}
-        <td class="border-l border-gray-300 font-bold">${tot[side].R}</td>
-        <td>${tot[side].H}</td>
-        <td>${tot[side].E}</td>`;
-      linescoreBody.appendChild(tr);
-    });
   }
 
   /* ══════════════════════════════════════════════════════════════════════════
@@ -1109,9 +1138,11 @@
     setTimeout(()=>{ btn.textContent = orig; }, 1400);
   });
 
-  /* ── Initial render ──────────────────────────────────────────────────────── */
+  /* ── Initial render + auto-init (removes all selection friction) ─────────── */
   renderLinescore();
-  // Team and section bars are visible on load (not hidden in HTML)
-  // Nothing is selected — tabs are grey, content shows empty state
+  // Load immediately into the most compelling view — no clicks required.
+  setMode('watch-learn');
+  setTeam('away');
+  selectSection('offense-defense');
 
 })();
