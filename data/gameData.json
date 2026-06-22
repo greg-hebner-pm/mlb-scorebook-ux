@@ -308,7 +308,8 @@
         "1": "R. Castellano",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 1,
@@ -326,7 +327,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 1,
@@ -344,7 +346,8 @@
         "1": null,
         "2": "T. Aguilar",
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 1,
@@ -362,7 +365,8 @@
         "1": null,
         "2": "T. Aguilar",
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 1,
@@ -380,7 +384,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 1,
@@ -398,7 +403,8 @@
         "1": "B. Tillman",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 1,
@@ -416,7 +422,8 @@
         "1": "B. Tillman",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 1,
@@ -434,7 +441,8 @@
         "1": "G. Schaefer",
         "2": "B. Tillman",
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 1,
@@ -452,7 +460,8 @@
         "1": "G. Schaefer",
         "2": "B. Tillman",
         "3": null
-      }
+      },
+      "pitchCount": 9
     },
     {
       "inning": 2,
@@ -470,7 +479,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 2,
@@ -488,7 +498,8 @@
         "1": null,
         "2": "M. Delgado",
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 2,
@@ -506,7 +517,8 @@
         "1": null,
         "2": "M. Delgado",
         "3": null
-      }
+      },
+      "pitchCount": 9
     },
     {
       "inning": 2,
@@ -524,7 +536,8 @@
         "1": null,
         "2": "P. Vance",
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 2,
@@ -542,7 +555,8 @@
         "1": null,
         "2": "P. Vance",
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 2,
@@ -560,7 +574,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 2,
@@ -578,7 +593,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 2,
@@ -596,7 +612,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 3,
@@ -614,7 +631,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 3,
@@ -632,7 +650,8 @@
         "1": "D. Marsh",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 3,
@@ -650,7 +669,8 @@
         "1": "D. Marsh",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 3,
@@ -668,7 +688,8 @@
         "1": "J. Whitfield",
         "2": "D. Marsh",
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 3,
@@ -686,7 +707,8 @@
         "1": "J. Whitfield",
         "2": "D. Marsh",
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 3,
@@ -704,7 +726,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 3,
@@ -722,7 +745,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 3,
@@ -740,7 +764,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 4,
@@ -758,7 +783,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 9
     },
     {
       "inning": 4,
@@ -776,7 +802,8 @@
         "1": null,
         "2": "S. Okafor",
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 4,
@@ -794,7 +821,8 @@
         "1": null,
         "2": "S. Okafor",
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 4,
@@ -812,7 +840,8 @@
         "1": null,
         "2": "S. Okafor",
         "3": null
-      }
+      },
+      "pitchCount": 6
     },
     {
       "inning": 4,
@@ -830,7 +859,8 @@
         "1": "A. Petrov",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 4,
@@ -848,7 +878,8 @@
         "1": "A. Petrov",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 4,
@@ -866,7 +897,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 4,
@@ -884,7 +916,8 @@
         "1": "W. Conlan",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 4,
@@ -902,7 +935,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 5,
@@ -920,7 +954,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 6
     },
     {
       "inning": 5,
@@ -938,7 +973,8 @@
         "1": "D. Marsh",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 5,
@@ -956,7 +992,8 @@
         "1": "D. Marsh",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 5,
@@ -974,7 +1011,8 @@
         "1": "J. Whitfield",
         "2": "D. Marsh",
         "3": null
-      }
+      },
+      "pitchCount": 7
     },
     {
       "inning": 5,
@@ -992,7 +1030,8 @@
         "1": "J. Whitfield",
         "2": "D. Marsh",
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 5,
@@ -1010,7 +1049,8 @@
         "1": null,
         "2": "M. Delgado",
         "3": "J. Whitfield"
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 5,
@@ -1028,7 +1068,8 @@
         "1": null,
         "2": "M. Delgado",
         "3": "J. Whitfield"
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 5,
@@ -1046,7 +1087,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 9
     },
     {
       "inning": 5,
@@ -1064,7 +1106,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 5,
@@ -1082,7 +1125,8 @@
         "1": "C. Reyes",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 6
     },
     {
       "inning": 5,
@@ -1100,7 +1144,8 @@
         "1": null,
         "2": null,
         "3": "B. Tillman"
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 5,
@@ -1118,7 +1163,8 @@
         "1": null,
         "2": null,
         "3": "B. Tillman"
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 5,
@@ -1136,7 +1182,8 @@
         "1": null,
         "2": null,
         "3": "B. Tillman"
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 6,
@@ -1154,7 +1201,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 6,
@@ -1172,7 +1220,8 @@
         "1": "L. Hutchins",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 6,
@@ -1190,7 +1239,8 @@
         "1": "L. Hutchins",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 9
     },
     {
       "inning": 6,
@@ -1208,7 +1258,8 @@
         "1": "L. Hutchins",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 6,
@@ -1226,7 +1277,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 6,
@@ -1244,7 +1296,8 @@
         "1": "W. Conlan",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 7
     },
     {
       "inning": 6,
@@ -1262,7 +1315,8 @@
         "1": null,
         "2": "E. Marsh-Howell",
         "3": "W. Conlan"
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 6,
@@ -1280,7 +1334,8 @@
         "1": null,
         "2": "E. Marsh-Howell",
         "3": "W. Conlan"
-      }
+      },
+      "pitchCount": 9
     },
     {
       "inning": 6,
@@ -1298,7 +1353,8 @@
         "1": null,
         "2": "E. Marsh-Howell",
         "3": "W. Conlan"
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 7,
@@ -1316,7 +1372,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 8
     },
     {
       "inning": 7,
@@ -1334,7 +1391,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 7,
@@ -1352,7 +1410,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 7,
@@ -1370,7 +1429,8 @@
         "1": null,
         "2": null,
         "3": "C. Reyes"
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 7,
@@ -1388,7 +1448,8 @@
         "1": null,
         "2": null,
         "3": "C. Reyes"
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 7,
@@ -1406,7 +1467,8 @@
         "1": null,
         "2": null,
         "3": "C. Reyes"
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 7,
@@ -1424,7 +1486,8 @@
         "1": null,
         "2": null,
         "3": "G. Schaefer"
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 7,
@@ -1442,7 +1505,8 @@
         "1": null,
         "2": null,
         "3": "G. Schaefer"
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 8,
@@ -1460,7 +1524,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 8,
@@ -1478,7 +1543,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 8,
@@ -1496,7 +1562,8 @@
         "1": "P. Vance",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 6
     },
     {
       "inning": 8,
@@ -1514,7 +1581,8 @@
         "1": "P. Vance",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 7
     },
     {
       "inning": 8,
@@ -1532,7 +1600,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 9
     },
     {
       "inning": 8,
@@ -1550,7 +1619,8 @@
         "1": "E. Marsh-Howell",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 9
     },
     {
       "inning": 8,
@@ -1568,7 +1638,8 @@
         "1": "E. Marsh-Howell",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 8,
@@ -1586,7 +1657,8 @@
         "1": "D. Korhonen",
         "2": "E. Marsh-Howell",
         "3": null
-      }
+      },
+      "pitchCount": 9
     },
     {
       "inning": 8,
@@ -1604,7 +1676,8 @@
         "1": "C. Reyes",
         "2": "D. Korhonen",
         "3": "E. Marsh-Howell"
-      }
+      },
+      "pitchCount": 6
     },
     {
       "inning": 8,
@@ -1622,7 +1695,8 @@
         "1": "C. Reyes",
         "2": "D. Korhonen",
         "3": null
-      }
+      },
+      "pitchCount": 3
     },
     {
       "inning": 9,
@@ -1640,7 +1714,8 @@
         "1": "R. Castellano",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 9,
@@ -1658,7 +1733,8 @@
         "1": "R. Castellano",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 9,
@@ -1676,7 +1752,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 9,
@@ -1694,7 +1771,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 9,
@@ -1712,7 +1790,8 @@
         "1": null,
         "2": "K. Branson",
         "3": null
-      }
+      },
+      "pitchCount": 4
     },
     {
       "inning": 9,
@@ -1730,7 +1809,8 @@
         "1": null,
         "2": "K. Branson",
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 9,
@@ -1748,7 +1828,8 @@
         "1": null,
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 2
     },
     {
       "inning": 9,
@@ -1766,7 +1847,8 @@
         "1": "G. Schaefer",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 6
     },
     {
       "inning": 9,
@@ -1784,7 +1866,8 @@
         "1": "G. Schaefer",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 5
     },
     {
       "inning": 9,
@@ -1802,7 +1885,8 @@
         "1": "G. Schaefer",
         "2": null,
         "3": null
-      }
+      },
+      "pitchCount": 3
     }
   ],
   "bench": {
