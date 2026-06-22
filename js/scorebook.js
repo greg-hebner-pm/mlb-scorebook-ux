@@ -11,7 +11,7 @@
 
   /* ── Constants ──────────────────────────────────────────────────────────── */
   const START_IDX     = data.meta.startEventIndex;
-  const AB_MS_1X      = 90000;
+  const AB_MS_1X      = 60000;
   const TRANS_MS_1X   = 15000;
   const INNINGS       = 11;
   const HALF          = { away:'top', home:'bottom' };
