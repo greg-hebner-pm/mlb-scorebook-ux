@@ -79,3 +79,21 @@ html, body {
   outline-offset: -2px;
   z-index: 1;
 }
+
+/* ── Scorebook hotlink pulse — front page call-to-action ───────────────────── */
+@keyframes scorebook-glow {
+  0%, 100% {
+    background-color: transparent;
+    color: #041e42;
+  }
+  50% {
+    background-color: #f5d130;
+    color: #041e42;
+  }
+}
+.scorebook-pulse {
+  animation: scorebook-glow 1.8s ease-in-out infinite;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+}
